@@ -67,6 +67,9 @@ public class PlantillasHTML {
         </form>
 
     """;
+
+    public static final String SCRIPT_CARGA = "<script src='./recursos/js/carga.js' text='javascript'>";
+
     public static final String NAVBAR_TEMPLATE = """
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
@@ -200,6 +203,7 @@ public class PlantillasHTML {
                   $entradas_td$
               </tbody>
             </table>
+            <a class="btn btn-warning text-center">Insertar entrada</a>
             
     </div>
 
@@ -276,6 +280,7 @@ public class PlantillasHTML {
     <td><form action="/editar" method="post">
           <input type="hidden" name="idEntrarda" value="$id$">
           <input type="submit" value="Editar" class="btn btn-primary">
+          <input type="submit" name="borrar" value="Borrar" class="btn btn-danger">
         </form>
     </td>
     </tr>

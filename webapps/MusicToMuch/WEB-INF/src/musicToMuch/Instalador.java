@@ -21,8 +21,8 @@ public class Instalador extends HttpServlet {
         DB db = DB.getInstanceDb();
         animar(out);
         db.crearTablas();
-        sleep(2500);
-        resp.sendRedirect(req.getContextPath() + "/inicioSesion");
+        //sleep(2500);
+        //resp.sendRedirect(req.getContextPath() + "/inicioSesion");
 
 
     }
@@ -49,6 +49,8 @@ public class Instalador extends HttpServlet {
       out.println(PlantillasHTML.INSTALLER_SPINNER);
 
       out.println(PlantillasHTML.CLOSE_MAIN);
+      
+      out.println(PlantillasHTML.SCRIPT_CARGA);
       out.println(PlantillasHTML.CLOSE_BODY);
       out.println(PlantillasHTML.CLOSE_HTML);
     }

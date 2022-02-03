@@ -38,3 +38,9 @@ footer{
 .card{
     margin: 1vh;
 }
+
+*
+{
+    margin: 0vh;
+    padding: 0vh;
+}
