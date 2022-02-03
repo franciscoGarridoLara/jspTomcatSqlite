@@ -1,0 +1,11 @@
+<web-app>
+   <servlet>
+      <servlet-name>acceso</servlet-name>
+      <servlet-class>ejemplo.Acceso</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>acceso</servlet-name>
+      <url-pattern>/acceso</url-pattern>
+   </servlet-mapping>
+   
+</web-app>

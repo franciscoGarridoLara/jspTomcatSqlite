@@ -1,0 +1,11 @@
+<web-app>
+   <servlet>
+      <servlet-name>iva</servlet-name>
+      <servlet-class>ejemplo.Iva</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>iva</servlet-name>
+      <url-pattern>/iva</url-pattern>
+   </servlet-mapping>
+   
+</web-app>

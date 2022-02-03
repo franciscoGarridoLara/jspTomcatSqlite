@@ -1,0 +1,19 @@
+<web-app>
+   <servlet>
+      <servlet-name>hora</servlet-name>			
+      <servlet-class>ejemplo.Hora</servlet-class>	
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>hora</servlet-name>			
+      <url-pattern>/hora</url-pattern>			
+   </servlet-mapping>
+
+   <servlet>
+      <servlet-name>mayusculas</servlet-name>			
+      <servlet-class>ejemplo.Mayusculas</servlet-class>	
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>mayusculas</servlet-name>			
+      <url-pattern>/mayusculas</url-pattern>			
+   </servlet-mapping>
+</web-app>

@@ -1,0 +1,773 @@
+13-Jan-2022 23:20:09.235 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.56
+13-Jan-2022 23:20:09.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Dec 2 2021 14:30:07 UTC
+13-Jan-2022 23:20:09.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.56.0
+13-Jan-2022 23:20:09.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Linux
+13-Jan-2022 23:20:09.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      5.13.0-7614-generic
+13-Jan-2022 23:20:09.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+13-Jan-2022 23:20:09.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         /usr/lib/jvm/java-17-oracle
+13-Jan-2022 23:20:09.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17+35-LTS-2724
+13-Jan-2022 23:20:09.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+13-Jan-2022 23:20:09.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     /home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:20:09.239 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     /home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:20:09.245 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+13-Jan-2022 23:20:09.245 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+13-Jan-2022 23:20:09.245 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+13-Jan-2022 23:20:09.245 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+13-Jan-2022 23:20:09.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+13-Jan-2022 23:20:09.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/conf/logging.properties
+13-Jan-2022 23:20:09.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+13-Jan-2022 23:20:09.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+13-Jan-2022 23:20:09.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+13-Jan-2022 23:20:09.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+13-Jan-2022 23:20:09.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+13-Jan-2022 23:20:09.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:20:09.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:20:09.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/temp
+13-Jan-2022 23:20:09.247 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+13-Jan-2022 23:20:09.481 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+13-Jan-2022 23:20:09.506 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [405] milliseconds
+13-Jan-2022 23:20:09.545 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+13-Jan-2022 23:20:09.545 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.56]
+13-Jan-2022 23:20:09.553 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/host-manager] de la aplicación web
+13-Jan-2022 23:20:09.800 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/host-manager] has finished in [245] ms
+13-Jan-2022 23:20:09.800 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/manager] de la aplicación web
+13-Jan-2022 23:20:09.824 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/manager] has finished in [24] ms
+13-Jan-2022 23:20:09.824 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/ROOT] de la aplicación web
+13-Jan-2022 23:20:09.841 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/ROOT] has finished in [17] ms
+13-Jan-2022 23:20:09.841 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet] de la aplicación web
+13-Jan-2022 23:20:09.879 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet] has finished in [38] ms
+13-Jan-2022 23:20:09.879 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/examples] de la aplicación web
+13-Jan-2022 23:20:10.052 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/examples] has finished in [173] ms
+13-Jan-2022 23:20:10.052 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/servlet-dado] de la aplicación web
+13-Jan-2022 23:20:10.065 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/servlet-dado] has finished in [13] ms
+13-Jan-2022 23:20:10.066 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/docs] de la aplicación web
+13-Jan-2022 23:20:10.076 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/docs] has finished in [11] ms
+13-Jan-2022 23:20:10.078 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:20:10.085 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [579] milliseconds
+13-Jan-2022 23:21:22.870 INFO [Thread-2] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:21:22.876 INFO [Thread-2] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+13-Jan-2022 23:21:22.916 INFO [Thread-2] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:21:22.928 INFO [Thread-2] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:21:23.974 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.56
+13-Jan-2022 23:21:23.980 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Dec 2 2021 14:30:07 UTC
+13-Jan-2022 23:21:23.980 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.56.0
+13-Jan-2022 23:21:23.980 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Linux
+13-Jan-2022 23:21:23.980 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      5.13.0-7614-generic
+13-Jan-2022 23:21:23.981 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+13-Jan-2022 23:21:23.981 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         /usr/lib/jvm/java-17-oracle
+13-Jan-2022 23:21:23.981 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17+35-LTS-2724
+13-Jan-2022 23:21:23.981 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+13-Jan-2022 23:21:23.981 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     /home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:21:23.981 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     /home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:21:23.991 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+13-Jan-2022 23:21:23.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+13-Jan-2022 23:21:23.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+13-Jan-2022 23:21:23.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+13-Jan-2022 23:21:23.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+13-Jan-2022 23:21:23.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/conf/logging.properties
+13-Jan-2022 23:21:23.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+13-Jan-2022 23:21:23.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+13-Jan-2022 23:21:23.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+13-Jan-2022 23:21:23.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+13-Jan-2022 23:21:23.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+13-Jan-2022 23:21:23.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:21:23.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:21:23.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/temp
+13-Jan-2022 23:21:23.996 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+13-Jan-2022 23:21:24.321 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+13-Jan-2022 23:21:24.347 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [588] milliseconds
+13-Jan-2022 23:21:24.391 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+13-Jan-2022 23:21:24.391 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.56]
+13-Jan-2022 23:21:24.397 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/host-manager] de la aplicación web
+13-Jan-2022 23:21:24.701 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/host-manager] has finished in [301] ms
+13-Jan-2022 23:21:24.701 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/manager] de la aplicación web
+13-Jan-2022 23:21:24.726 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/manager] has finished in [24] ms
+13-Jan-2022 23:21:24.726 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/ROOT] de la aplicación web
+13-Jan-2022 23:21:24.752 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/ROOT] has finished in [26] ms
+13-Jan-2022 23:21:24.752 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet] de la aplicación web
+13-Jan-2022 23:21:24.809 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet] has finished in [56] ms
+13-Jan-2022 23:21:24.809 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/examples] de la aplicación web
+13-Jan-2022 23:21:25.053 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/examples] has finished in [244] ms
+13-Jan-2022 23:21:25.054 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/servlet-dado] de la aplicación web
+13-Jan-2022 23:21:25.075 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/servlet-dado] has finished in [21] ms
+13-Jan-2022 23:21:25.076 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/docs] de la aplicación web
+13-Jan-2022 23:21:25.093 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/docs] has finished in [16] ms
+13-Jan-2022 23:21:25.096 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:21:25.104 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [756] milliseconds
+13-Jan-2022 23:29:35.262 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Falló la recarga del contexto [/servlet-dado]
+13-Jan-2022 23:29:35.263 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/servlet-dado]
+13-Jan-2022 23:29:35.301 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+13-Jan-2022 23:30:15.309 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Falló la recarga del contexto [/servlet-dado]
+13-Jan-2022 23:30:15.309 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/servlet-dado]
+13-Jan-2022 23:30:15.344 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+13-Jan-2022 23:34:04.949 INFO [Thread-2] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:34:04.960 INFO [Thread-2] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+13-Jan-2022 23:34:04.990 INFO [Thread-2] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:34:05.003 INFO [Thread-2] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:34:06.405 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.56
+13-Jan-2022 23:34:06.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Dec 2 2021 14:30:07 UTC
+13-Jan-2022 23:34:06.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.56.0
+13-Jan-2022 23:34:06.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Linux
+13-Jan-2022 23:34:06.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      5.13.0-7614-generic
+13-Jan-2022 23:34:06.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+13-Jan-2022 23:34:06.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         /usr/lib/jvm/java-17-oracle
+13-Jan-2022 23:34:06.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17+35-LTS-2724
+13-Jan-2022 23:34:06.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+13-Jan-2022 23:34:06.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     /home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:34:06.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     /home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:34:06.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+13-Jan-2022 23:34:06.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+13-Jan-2022 23:34:06.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+13-Jan-2022 23:34:06.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+13-Jan-2022 23:34:06.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+13-Jan-2022 23:34:06.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/conf/logging.properties
+13-Jan-2022 23:34:06.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+13-Jan-2022 23:34:06.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+13-Jan-2022 23:34:06.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+13-Jan-2022 23:34:06.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+13-Jan-2022 23:34:06.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+13-Jan-2022 23:34:06.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:34:06.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:34:06.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/temp
+13-Jan-2022 23:34:06.424 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+13-Jan-2022 23:34:06.723 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+13-Jan-2022 23:34:06.746 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [524] milliseconds
+13-Jan-2022 23:34:06.785 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+13-Jan-2022 23:34:06.786 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.56]
+13-Jan-2022 23:34:06.794 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/host-manager] de la aplicación web
+13-Jan-2022 23:34:07.085 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/host-manager] has finished in [289] ms
+13-Jan-2022 23:34:07.086 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/manager] de la aplicación web
+13-Jan-2022 23:34:07.115 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/manager] has finished in [30] ms
+13-Jan-2022 23:34:07.115 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/ROOT] de la aplicación web
+13-Jan-2022 23:34:07.131 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/ROOT] has finished in [16] ms
+13-Jan-2022 23:34:07.132 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet] de la aplicación web
+13-Jan-2022 23:34:07.176 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet] has finished in [43] ms
+13-Jan-2022 23:34:07.176 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/examples] de la aplicación web
+13-Jan-2022 23:34:07.386 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/examples] has finished in [210] ms
+13-Jan-2022 23:34:07.386 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/servlet-dado] de la aplicación web
+13-Jan-2022 23:34:07.407 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/servlet-dado] has finished in [21] ms
+13-Jan-2022 23:34:07.407 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/docs] de la aplicación web
+13-Jan-2022 23:34:07.424 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/docs] has finished in [16] ms
+13-Jan-2022 23:34:07.428 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:34:07.440 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [693] milliseconds
+13-Jan-2022 23:50:27.714 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Falló la recarga del contexto [/primer-servlet]
+13-Jan-2022 23:50:27.716 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Ha comenzado la recarga de Contexto [/primer-servlet]
+13-Jan-2022 23:50:27.758 SEVERE [Catalina-utility-1] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [12] column [2]
+	org.xml.sax.SAXParseException; systemId: file:/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet/WEB-INF/web.xml; lineNumber: 12; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$TrailingMiscDriver.next(XMLDocumentScannerImpl.java:1398)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1535)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1277)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:986)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5135)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3818)
+		at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1443)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1415)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1654)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:315)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+13-Jan-2022 23:50:27.759 SEVERE [Catalina-utility-1] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Error de evaluación (parse) en el archivo web.xml de la aplicación a [file:/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet/WEB-INF/web.xml]
+	org.xml.sax.SAXParseException; systemId: file:/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet/WEB-INF/web.xml; lineNumber: 12; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$TrailingMiscDriver.next(XMLDocumentScannerImpl.java:1398)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1535)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1277)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:986)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5135)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3818)
+		at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1443)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1415)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1654)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:315)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+13-Jan-2022 23:50:27.760 SEVERE [Catalina-utility-1] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Se ha producido en la línea [12] columna [2]
+13-Jan-2022 23:50:27.764 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ContextConfig.configureStart Esta aplicación está marcada como no disponible debido a los errores precedentes
+13-Jan-2022 23:50:27.764 SEVERE [Catalina-utility-1] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+13-Jan-2022 23:50:27.765 SEVERE [Catalina-utility-1] org.apache.catalina.core.StandardContext.startInternal Falló en arranque del Contexto [/primer-servlet] debido a errores previos
+13-Jan-2022 23:50:27.768 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Se ha completado la recarga de este Contexto
+13-Jan-2022 23:52:48.228 INFO [Thread-2] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:52:48.236 INFO [Thread-2] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+13-Jan-2022 23:52:48.291 INFO [Thread-2] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:52:48.309 INFO [Thread-2] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:52:50.272 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.56
+13-Jan-2022 23:52:50.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Dec 2 2021 14:30:07 UTC
+13-Jan-2022 23:52:50.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.56.0
+13-Jan-2022 23:52:50.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Linux
+13-Jan-2022 23:52:50.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      5.13.0-7614-generic
+13-Jan-2022 23:52:50.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+13-Jan-2022 23:52:50.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         /usr/lib/jvm/java-17-oracle
+13-Jan-2022 23:52:50.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17+35-LTS-2724
+13-Jan-2022 23:52:50.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+13-Jan-2022 23:52:50.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     /home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:52:50.277 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     /home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:52:50.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+13-Jan-2022 23:52:50.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+13-Jan-2022 23:52:50.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+13-Jan-2022 23:52:50.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+13-Jan-2022 23:52:50.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+13-Jan-2022 23:52:50.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/conf/logging.properties
+13-Jan-2022 23:52:50.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+13-Jan-2022 23:52:50.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+13-Jan-2022 23:52:50.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+13-Jan-2022 23:52:50.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+13-Jan-2022 23:52:50.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+13-Jan-2022 23:52:50.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:52:50.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:52:50.287 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/temp
+13-Jan-2022 23:52:50.288 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+13-Jan-2022 23:52:50.589 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+13-Jan-2022 23:52:50.615 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [536] milliseconds
+13-Jan-2022 23:52:50.660 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+13-Jan-2022 23:52:50.661 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.56]
+13-Jan-2022 23:52:50.670 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/host-manager] de la aplicación web
+13-Jan-2022 23:52:50.971 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/host-manager] has finished in [300] ms
+13-Jan-2022 23:52:50.971 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/manager] de la aplicación web
+13-Jan-2022 23:52:51.003 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/manager] has finished in [31] ms
+13-Jan-2022 23:52:51.003 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/ROOT] de la aplicación web
+13-Jan-2022 23:52:51.026 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/ROOT] has finished in [23] ms
+13-Jan-2022 23:52:51.026 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet] de la aplicación web
+13-Jan-2022 23:52:51.037 SEVERE [main] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [12] column [2]
+	org.xml.sax.SAXParseException; systemId: file:/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet/WEB-INF/web.xml; lineNumber: 12; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$TrailingMiscDriver.next(XMLDocumentScannerImpl.java:1398)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1535)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1277)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:986)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5135)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1185)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1933)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1095)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:477)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+13-Jan-2022 23:52:51.038 SEVERE [main] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Error de evaluación (parse) en el archivo web.xml de la aplicación a [file:/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet/WEB-INF/web.xml]
+	org.xml.sax.SAXParseException; systemId: file:/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet/WEB-INF/web.xml; lineNumber: 12; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$TrailingMiscDriver.next(XMLDocumentScannerImpl.java:1398)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1535)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1277)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:986)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5135)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1185)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1933)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1095)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:477)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+13-Jan-2022 23:52:51.039 SEVERE [main] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Se ha producido en la línea [12] columna [2]
+13-Jan-2022 23:52:51.044 SEVERE [main] org.apache.catalina.startup.ContextConfig.configureStart Esta aplicación está marcada como no disponible debido a los errores precedentes
+13-Jan-2022 23:52:51.045 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+13-Jan-2022 23:52:51.046 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Falló en arranque del Contexto [/primer-servlet] debido a errores previos
+13-Jan-2022 23:52:51.053 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet] has finished in [27] ms
+13-Jan-2022 23:52:51.054 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/examples] de la aplicación web
+13-Jan-2022 23:52:51.306 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/examples] has finished in [252] ms
+13-Jan-2022 23:52:51.306 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/servlet-dado] de la aplicación web
+13-Jan-2022 23:52:51.329 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/servlet-dado] has finished in [23] ms
+13-Jan-2022 23:52:51.330 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/docs] de la aplicación web
+13-Jan-2022 23:52:51.345 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/docs] has finished in [16] ms
+13-Jan-2022 23:52:51.348 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:52:51.357 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [741] milliseconds
+13-Jan-2022 23:54:53.559 INFO [Thread-2] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:54:53.562 INFO [Thread-2] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+13-Jan-2022 23:54:53.582 INFO [Thread-2] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:54:53.585 INFO [Thread-2] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:54:55.044 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.56
+13-Jan-2022 23:54:55.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Dec 2 2021 14:30:07 UTC
+13-Jan-2022 23:54:55.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.56.0
+13-Jan-2022 23:54:55.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Linux
+13-Jan-2022 23:54:55.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      5.13.0-7614-generic
+13-Jan-2022 23:54:55.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+13-Jan-2022 23:54:55.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         /usr/lib/jvm/java-17-oracle
+13-Jan-2022 23:54:55.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17+35-LTS-2724
+13-Jan-2022 23:54:55.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+13-Jan-2022 23:54:55.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     /home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:54:55.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     /home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:54:55.059 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+13-Jan-2022 23:54:55.059 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+13-Jan-2022 23:54:55.059 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+13-Jan-2022 23:54:55.059 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+13-Jan-2022 23:54:55.059 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+13-Jan-2022 23:54:55.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/conf/logging.properties
+13-Jan-2022 23:54:55.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+13-Jan-2022 23:54:55.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+13-Jan-2022 23:54:55.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+13-Jan-2022 23:54:55.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+13-Jan-2022 23:54:55.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+13-Jan-2022 23:54:55.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:54:55.061 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:54:55.061 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/temp
+13-Jan-2022 23:54:55.062 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+13-Jan-2022 23:54:55.337 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+13-Jan-2022 23:54:55.359 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [470] milliseconds
+13-Jan-2022 23:54:55.398 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+13-Jan-2022 23:54:55.398 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.56]
+13-Jan-2022 23:54:55.405 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/host-manager] de la aplicación web
+13-Jan-2022 23:54:55.671 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/host-manager] has finished in [264] ms
+13-Jan-2022 23:54:55.671 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/manager] de la aplicación web
+13-Jan-2022 23:54:55.697 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/manager] has finished in [26] ms
+13-Jan-2022 23:54:55.697 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/ROOT] de la aplicación web
+13-Jan-2022 23:54:55.715 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/ROOT] has finished in [18] ms
+13-Jan-2022 23:54:55.715 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet] de la aplicación web
+13-Jan-2022 23:54:55.725 SEVERE [main] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [12] column [2]
+	org.xml.sax.SAXParseException; systemId: file:/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet/WEB-INF/web.xml; lineNumber: 12; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$TrailingMiscDriver.next(XMLDocumentScannerImpl.java:1398)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1535)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1277)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:986)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5135)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1185)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1933)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1095)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:477)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+13-Jan-2022 23:54:55.727 SEVERE [main] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Error de evaluación (parse) en el archivo web.xml de la aplicación a [file:/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet/WEB-INF/web.xml]
+	org.xml.sax.SAXParseException; systemId: file:/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet/WEB-INF/web.xml; lineNumber: 12; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$TrailingMiscDriver.next(XMLDocumentScannerImpl.java:1398)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1535)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1277)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:986)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5135)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1185)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1933)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1095)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:477)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+13-Jan-2022 23:54:55.728 SEVERE [main] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Se ha producido en la línea [12] columna [2]
+13-Jan-2022 23:54:55.733 SEVERE [main] org.apache.catalina.startup.ContextConfig.configureStart Esta aplicación está marcada como no disponible debido a los errores precedentes
+13-Jan-2022 23:54:55.734 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+13-Jan-2022 23:54:55.735 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Falló en arranque del Contexto [/primer-servlet] debido a errores previos
+13-Jan-2022 23:54:55.742 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet] has finished in [26] ms
+13-Jan-2022 23:54:55.742 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/examples] de la aplicación web
+13-Jan-2022 23:54:55.968 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/examples] has finished in [226] ms
+13-Jan-2022 23:54:55.968 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/servlet-dado] de la aplicación web
+13-Jan-2022 23:54:55.996 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/servlet-dado] has finished in [28] ms
+13-Jan-2022 23:54:55.996 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/docs] de la aplicación web
+13-Jan-2022 23:54:56.007 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/docs] has finished in [11] ms
+13-Jan-2022 23:54:56.010 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:54:56.019 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [659] milliseconds
+13-Jan-2022 23:59:20.669 INFO [Thread-2] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:59:20.675 INFO [Thread-2] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+13-Jan-2022 23:59:20.699 INFO [Thread-2] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:59:20.708 INFO [Thread-2] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:59:22.233 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.56
+13-Jan-2022 23:59:22.236 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Dec 2 2021 14:30:07 UTC
+13-Jan-2022 23:59:22.236 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.56.0
+13-Jan-2022 23:59:22.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Linux
+13-Jan-2022 23:59:22.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      5.13.0-7614-generic
+13-Jan-2022 23:59:22.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+13-Jan-2022 23:59:22.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         /usr/lib/jvm/java-17-oracle
+13-Jan-2022 23:59:22.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17+35-LTS-2724
+13-Jan-2022 23:59:22.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+13-Jan-2022 23:59:22.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     /home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:59:22.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     /home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:59:22.245 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+13-Jan-2022 23:59:22.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+13-Jan-2022 23:59:22.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+13-Jan-2022 23:59:22.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+13-Jan-2022 23:59:22.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+13-Jan-2022 23:59:22.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/conf/logging.properties
+13-Jan-2022 23:59:22.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+13-Jan-2022 23:59:22.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+13-Jan-2022 23:59:22.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+13-Jan-2022 23:59:22.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+13-Jan-2022 23:59:22.247 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+13-Jan-2022 23:59:22.247 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:59:22.247 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56
+13-Jan-2022 23:59:22.247 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/temp
+13-Jan-2022 23:59:22.248 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+13-Jan-2022 23:59:22.482 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+13-Jan-2022 23:59:22.499 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [428] milliseconds
+13-Jan-2022 23:59:22.530 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+13-Jan-2022 23:59:22.530 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.56]
+13-Jan-2022 23:59:22.536 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/host-manager] de la aplicación web
+13-Jan-2022 23:59:22.740 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/host-manager] has finished in [202] ms
+13-Jan-2022 23:59:22.740 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/manager] de la aplicación web
+13-Jan-2022 23:59:22.760 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/manager] has finished in [19] ms
+13-Jan-2022 23:59:22.760 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/ROOT] de la aplicación web
+13-Jan-2022 23:59:22.776 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/ROOT] has finished in [15] ms
+13-Jan-2022 23:59:22.776 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet] de la aplicación web
+13-Jan-2022 23:59:22.784 SEVERE [main] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [12] column [2]
+	org.xml.sax.SAXParseException; systemId: file:/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet/WEB-INF/web.xml; lineNumber: 12; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$TrailingMiscDriver.next(XMLDocumentScannerImpl.java:1398)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1535)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1277)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:986)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5135)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1185)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1933)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1095)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:477)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+13-Jan-2022 23:59:22.786 SEVERE [main] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Error de evaluación (parse) en el archivo web.xml de la aplicación a [file:/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet/WEB-INF/web.xml]
+	org.xml.sax.SAXParseException; systemId: file:/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet/WEB-INF/web.xml; lineNumber: 12; columnNumber: 2; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$TrailingMiscDriver.next(XMLDocumentScannerImpl.java:1398)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1535)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1277)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:986)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5135)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1185)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1933)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1095)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:477)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+13-Jan-2022 23:59:22.787 SEVERE [main] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Se ha producido en la línea [12] columna [2]
+13-Jan-2022 23:59:22.789 SEVERE [main] org.apache.catalina.startup.ContextConfig.configureStart Esta aplicación está marcada como no disponible debido a los errores precedentes
+13-Jan-2022 23:59:22.790 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+13-Jan-2022 23:59:22.791 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Falló en arranque del Contexto [/primer-servlet] debido a errores previos
+13-Jan-2022 23:59:22.796 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/primer-servlet] has finished in [20] ms
+13-Jan-2022 23:59:22.796 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/examples] de la aplicación web
+13-Jan-2022 23:59:22.983 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/examples] has finished in [187] ms
+13-Jan-2022 23:59:22.983 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/servlet-dado] de la aplicación web
+13-Jan-2022 23:59:23.005 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/servlet-dado] has finished in [22] ms
+13-Jan-2022 23:59:23.005 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/docs] de la aplicación web
+13-Jan-2022 23:59:23.020 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/paco/Documentos/DAM2/PSP/Tomcat/apache-tomcat-9.0.56/webapps/docs] has finished in [15] ms
+13-Jan-2022 23:59:23.023 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+13-Jan-2022 23:59:23.030 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [530] milliseconds

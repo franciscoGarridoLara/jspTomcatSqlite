@@ -1,0 +1,11 @@
+<web-app>
+   <servlet>
+      <servlet-name>visitas</servlet-name>
+      <servlet-class>ejemplo.Visitas</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>visitas</servlet-name>
+      <url-pattern>/visitas</url-pattern>
+   </servlet-mapping>
+   
+</web-app>

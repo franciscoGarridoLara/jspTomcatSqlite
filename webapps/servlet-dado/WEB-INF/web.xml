@@ -1,0 +1,20 @@
+<web-app>
+   <servlet>
+      <servlet-name>dado</servlet-name>			
+      <servlet-class>ejemplo.Dado</servlet-class>	
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>dado</servlet-name>			
+      <url-pattern>/dado</url-pattern>			
+   </servlet-mapping>
+
+   <servlet>
+      <servlet-name>mayusculas</servlet-name>			
+      <servlet-class>ejemplo.Mayusculas</servlet-class>	
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>mayusculas</servlet-name>			
+      <url-pattern>/mayusculas</url-pattern>			
+   </servlet-mapping>
+</web-app>
+

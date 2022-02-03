@@ -1,0 +1,40 @@
+h1{
+    font-size: 100px;
+}
+
+.card-text
+{
+    height: 100px;
+    overflow: scroll;
+}
+
+body
+{
+    background-image: url(../imagenes/marius-masalar-rPOmLGwai2w-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+footer{
+    position: fixed;
+    left: 0px;
+    bottom: 0%;
+    height: 100px;
+    width: 100%;
+    background-color: #212529;
+    color: white;
+    font-size: 15px;
+
+}
+
+
+.container{
+    margin-top: 5%;
+}
+
+.card{
+    margin: 1vh;
+}

@@ -1,0 +1,44 @@
+body{
+
+    background-image: url(../imagenes/kelly-sikkema-HwU5H9Y6aL8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+   
+}
+
+.container-login{
+    /*border: 2px solid red;*/
+    width: 100%;
+    margin-top: 5%;
+}
+
+.logo{
+    /* border: 3px solid burlywood;*/
+    width: 50%;
+    height: 100%;
+}
+
+footer{
+    position: fixed;
+    left: 0px;
+    bottom: 0%;
+    height: 100px;
+    width: 100%;
+    background-color: #212529;
+    color: white;
+    font-size: 15px;
+
+}
+
+form label{
+    color: white;
+}
+
+ *{
+    /*border: 2px solid red;*/
+    margin: 0px;
+    padding: 0px;
+ }
+

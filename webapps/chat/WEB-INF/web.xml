@@ -1,0 +1,22 @@
+<web-app>
+    <servlet>
+       <servlet-name>chat</servlet-name>
+       <servlet-class>ejemplo.Chat</servlet-class>
+    </servlet>
+    <servlet-mapping>
+       <servlet-name>chat</servlet-name>
+       <url-pattern>/chat</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+       <servlet-name>sqlite</servlet-name>
+       <servlet-class>ejemplo.SQLite</servlet-class>
+    </servlet>
+    <servlet-mapping>
+       <servlet-name>sqlite</servlet-name>
+       <url-pattern>/sqlite</url-pattern>
+    </servlet-mapping>
+ 
+ </web-app>
+ 
+ 

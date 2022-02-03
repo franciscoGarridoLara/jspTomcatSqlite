@@ -1,0 +1,51 @@
+<web-app>
+    <servlet>
+       <servlet-name>Instalador</servlet-name>
+       <servlet-class>musicToMuch.Instalador</servlet-class>
+    </servlet>
+    <servlet-mapping>
+       <servlet-name>Instalador</servlet-name>
+       <url-pattern>/instalador</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+      <servlet-name>InicioSesion</servlet-name>
+      <servlet-class>musicToMuch.InicioSesion</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>InicioSesion</servlet-name>
+      <url-pattern>/inicioSesion</url-pattern>
+   </servlet-mapping>
+
+   <servlet>
+      <servlet-name>PanelControl</servlet-name>
+      <servlet-class>musicToMuch.PanelControl</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>PanelControl</servlet-name>
+      <url-pattern>/panelControl</url-pattern>
+   </servlet-mapping>
+
+   <servlet>
+      <servlet-name>Blog</servlet-name>
+      <servlet-class>musicToMuch.Blog</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>Blog</servlet-name>
+      <url-pattern>/blog</url-pattern>
+   </servlet-mapping>
+
+   <servlet>
+      <servlet-name>Cerrar</servlet-name>
+      <servlet-class>musicToMuch.Cerrar</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>Cerrar</servlet-name>
+      <url-pattern>/cerrar</url-pattern>
+   </servlet-mapping>
+
+
+ 
+ </web-app>
+ 
+ 
