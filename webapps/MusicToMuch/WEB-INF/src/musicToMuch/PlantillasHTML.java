@@ -2,6 +2,7 @@ package musicToMuch;
 import org.stringtemplate.v4.*;
 import java.time.LocalDateTime;
 
+//TODO: CARGAR POOPER JS Y BOOTSTRAP LOCALMENTE.
 public class PlantillasHTML {
 
   public static final String HTML_INSTALLER_HEADER = """
@@ -142,7 +143,7 @@ public class PlantillasHTML {
     
     <div class="container container-passwd">
             <h1 class="text-center titulo">Cambiar Contraseña</h1>
-            <form class="" action="" method="POST">
+            <form class="" action="./cambiarPasswd" method="POST">
                 <div class="mb-3 col-4 offset-4">
                     <label for="pass1" class="form-label">Contaseña actual</label>
                     <input type="password" class="form-control" id=""  name="pass1" required>
@@ -173,12 +174,12 @@ public class PlantillasHTML {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>admin</td>
-                  <td>admin</td>
-                </tr>
+                $usuarios$
               </tbody>
             </table>
+            <form action="./insertarUsuario" method="post">
+              <input type="submit" name="insertar" value="Insertar usuario" class="btn btn-warning">
+            </form>
             
     </div>
 
@@ -203,7 +204,9 @@ public class PlantillasHTML {
                   $entradas_td$
               </tbody>
             </table>
-            <a class="btn btn-warning text-center">Insertar entrada</a>
+            <form action="./editar?insertar=true" method="post">
+              <input type="submit" name="insertar" value="Insertar entrada" class="btn btn-warning">
+            </form>
             
     </div>
 
@@ -273,19 +276,106 @@ public class PlantillasHTML {
         </form>
     """;
 
+    public static final String FORM_INSERTAR_USUARIO = """
+    <h2 class="text-center" style="color:white;">Creacion de Usuario</h2>
+    <form action="./insertarUsuario?insertar=true" method="POST">
+    <div class="mb-3">
+      <label class="form-label">Username</label>
+      <input type="text" class="form-control" name="username" id="username" placeholder="Nombre de usuario" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Contraseña</label>
+      <input type="text" class="form-control" name="password" id="password" placeholder="Contraseña" required>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="checkbox" id="isadmin" name="isadmin" value="true" checked>
+    <label class="form-check-label">Admin?</label>
+    </div>
+    
+    <button type="submit" class="btn btn-warning">Crear</button>
+  </form>
 
+
+    """;
+
+    public static final String ADMIN_CHECKBOX = """
+
+    <div class="form-check">
+    <input class="form-check-input" type="checkbox" id="isadmin" name="isadmin" value="true" checked>
+    <label class="form-check-label">Admin?</label>
+    </div>
+    
+
+
+    """;
     public static final String TR_ENTRADA = """
     <tr>
     <td>$nombre_entrada$</td>
-    <td><form action="/editar" method="post">
-          <input type="hidden" name="idEntrarda" value="$id$">
-          <input type="submit" value="Editar" class="btn btn-primary">
+    <td><form action="./editar" method="post">
+          <input type="hidden" name="idEntrada" value="$id$">
+          <input type="submit" value="editar" class="btn btn-primary">
           <input type="submit" name="borrar" value="Borrar" class="btn btn-danger">
         </form>
     </td>
     </tr>
     """;
 
+
+    public static final String TR_USUARIO = """
+    <tr>
+    <td>$nombre_usuario$</td>
+    <td><form action="./" method="post">
+          <input type="hidden" name="username" value="$username$">
+          <input type="submit" value="Editar" class="btn btn-primary">
+        </form>
+    </td>
+    </tr>
+    """;
+
+
+    public static final String FORM_ENTRADA = """ 
+    
+    <form action="./editar?update=true" method="POST">
+    <input type="hidden" name="id" id="id" value="$id$">
+    <div class="mb-3">
+      <label class="form-label">Titulo</label>
+      <input type="text" class="form-control" name="titulo" id="titulo" value="$titulo$">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Contenido</label>
+      <textarea type="text" class="form-control" name="contenido" id="contenido" value="">$contenido$</textarea>
+    </div>
+    <div class="mb-3">
+      <input type="date" class="form-control" name="fecha" id="fecha" value="$fecha$">
+    </div>
+    <button type="submit" class="btn btn-warning">Editar</button>
+  </form>
+    
+    
+    
+    """;
+
+    public static final String FORM_ENTRADA_INSERTAR = """ 
+    <h2 class="text-center" style="color:white;">Insertar Entrada</h2>
+    <form action="./editar?insertar=entrada" method="POST">
+    
+    <div class="mb-3">
+      <label class="form-label">Titulo</label>
+      <input type="text" class="form-control" name="titulo" id="titulo" value="">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Contenido</label>
+      <textarea type="text" class="form-control" name="contenido" id="contenido" value=""></textarea>
+    </div>
+    <div class="mb-3">
+      <input type="date" class="form-control" name="fecha" id="fecha" value="">
+    </div>
+    <button type="submit" class="btn btn-warning">Insertar</button>
+  </form>
+    
+    
+    
+    """;
     public static final String INSTALLER_SPINNER = """ 
     
     <div class="container">
@@ -299,8 +389,29 @@ public class PlantillasHTML {
     
     """;
 
-    public static final String OPEN_BODY = "<body>";
+    public static final String SUCCESS_ALERT = """
 
+    <div class="alert alert-success" role="alert">
+    Contraseña cambiada correctamente.
+    </div>
+
+
+    """;
+
+
+    public static final String DANGER_ALERT = """
+
+    <div class="alert alert-danger" role="alert">
+    Ha habido un error cambiando la contraseña.
+    </div>
+
+
+    """;
+
+
+    public static final String OPEN_CONTAINER = "<div class='container'>";
+    public static final String CLOSE_DIV = "</div>";
+    public static final String OPEN_BODY = "<body>";
     public static final String CLOSE_BODY = "</body>";
     public static final String OPEN_MAIN = "<main>";
     public static final String CLOSE_MAIN = "</main>";

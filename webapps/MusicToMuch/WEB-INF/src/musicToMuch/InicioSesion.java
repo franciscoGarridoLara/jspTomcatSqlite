@@ -14,6 +14,7 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+//FIX ME: REFACTORIZAR METODO DE INCIAR SESION, MODIFICAR BBDD PARA VARIOS USUARIOS, PEDIR SESIONES BIEN Y GUARDAR ATRIBUTO DE USUARIO.
 public class InicioSesion extends HttpServlet{
     
 
@@ -30,14 +31,13 @@ public class InicioSesion extends HttpServlet{
                     PrintWriter out = resp.getWriter();
                     String usuario = req.getParameter("usuario");
                     String passwordWeb = req.getParameter("password");
-                    String hashtextWeb = DB.getHashTextPasswordFromText(passwordWeb);;
-                    String hashtextDb = DB.getHashTextPassword(usuario);
-                    
-                    session.setAttribute("admin",(comprobarPassword(hashtextDb,hashtextWeb))?"true":"false");
 
-                    System.err.println(comprobarPassword(hashtextDb, hashtextWeb));
                     
-                    System.err.println( "ADMIN STATUS!!!!!" + (String) session.getAttribute("admin"));
+                    if(DB.getInstanceDb().verificarSesion(usuario, passwordWeb))
+                    {
+                      session.setAttribute("admin",(DB.getInstanceDb().isAdmin(usuario))?"true":"false");
+                    }
+                  
 
 
                     pintarPagina(out, req, resp, session);

@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 
-
+//FIX ME: JAVASCRIPT PARA EL LOADING...
 public class Instalador extends HttpServlet {
     boolean instalado = false;
     

@@ -61,14 +61,14 @@ public class Blog extends HttpServlet{
         out.println(PlantillasHTML.DOCTYPE);
         out.println(PlantillasHTML.OPEN_HTML);
         out.println(PlantillasHTML.HTML_BLOG_HEADER);
-        out.println(PlantillasHTML.NAVBAR_TEMPLATE);
+        
         out.println(PlantillasHTML.OPEN_BODY);
-
+        out.println(PlantillasHTML.NAVBAR_TEMPLATE);
         out.println(getEntradasAdmin());
 
-
+        out.println(PlantillasHTML.BUNDLE_POPPER_SCRIPT);
         out.println(PlantillasHTML.CLOSE_BODY);
-        out.println(PlantillasHTML.HTML_FOOTER);
+        
         out.println(PlantillasHTML.CLOSE_HTML);
     }
 
@@ -77,15 +77,15 @@ public class Blog extends HttpServlet{
       out.println(PlantillasHTML.DOCTYPE);
       out.println(PlantillasHTML.OPEN_HTML);
       out.println(PlantillasHTML.HTML_BLOG_HEADER);
-      out.println(PlantillasHTML.NAVBAR_TEMPLATE);
+      
       out.println(PlantillasHTML.OPEN_BODY);
-
+      out.println(PlantillasHTML.NAVBAR_TEMPLATE);
       out.println(getEntradasUser());
       
 
-
+      out.println(PlantillasHTML.BUNDLE_POPPER_SCRIPT);
       out.println(PlantillasHTML.CLOSE_BODY);
-      out.println(PlantillasHTML.HTML_FOOTER);
+      
       out.println(PlantillasHTML.CLOSE_HTML);
     }
 

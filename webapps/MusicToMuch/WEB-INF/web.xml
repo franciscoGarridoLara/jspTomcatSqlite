@@ -44,6 +44,33 @@
       <url-pattern>/cerrar</url-pattern>
    </servlet-mapping>
 
+   <servlet>
+      <servlet-name>Editar</servlet-name>
+      <servlet-class>musicToMuch.Editar</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>Editar</servlet-name>
+      <url-pattern>/editar</url-pattern>
+   </servlet-mapping>
+
+   <servlet>
+      <servlet-name>CambiarPasswd</servlet-name>
+      <servlet-class>musicToMuch.CambiarPasswd</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>CambiarPasswd</servlet-name>
+      <url-pattern>/cambiarPasswd</url-pattern>
+   </servlet-mapping>
+
+   <servlet>
+      <servlet-name>InsertarUsuario</servlet-name>
+      <servlet-class>musicToMuch.InsertarUsuario</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>InsertarUsuario</servlet-name>
+      <url-pattern>/insertarUsuario</url-pattern>
+   </servlet-mapping>
+
 
  
  </web-app>

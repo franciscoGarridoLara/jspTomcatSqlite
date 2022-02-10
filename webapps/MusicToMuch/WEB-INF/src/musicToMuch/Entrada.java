@@ -25,12 +25,12 @@ public class Entrada {
         this.fecha = fecha;
     }
 
-    public Entrada(String titulo, String texto)
+    public Entrada(String titulo, String texto, LocalDate fecha)
     {
         this.id = 0;
         this.titulo = titulo;
         this.texto = texto;
-        this.fecha = LocalDate.now();
+        this.fecha = fecha;
     }
 
     public int getId()
@@ -97,8 +97,8 @@ public class Entrada {
         html += "<h5 class='card-title'>"+ this.titulo + "</h5>";
         html += "<h6 class='card-subtitle mb-2 text-muted'>"+ this.fecha + "</h6>";
         html += "<p class='card-text'>"+ this.texto +"</p>";
-        html += "<form action='/editar' method='post'>";
-        html += "<input type='hidden' name='idEntrarda' value='" + this.id + "'>";
+        html += "<form action='./editar?update=entradaBlog' method='post'>";
+        html += "<input type='hidden' name='idEntrada' value='" + this.id + "'>";
         html += "<input type='submit' value='Editar' class='btn btn-primary'>";    
         html += "</form>"; 
         
