@@ -35,12 +35,15 @@ public class InicioSesion extends HttpServlet{
                     
                     if(DB.getInstanceDb().verificarSesion(usuario, passwordWeb))
                     {
+                      session.setAttribute("user", usuario);
                       session.setAttribute("admin",(DB.getInstanceDb().isAdmin(usuario))?"true":"false");
+                      pintarPagina(out, req, resp, session);
+                      
                     }
                   
 
 
-                    pintarPagina(out, req, resp, session);
+                    
                     
                   
 
@@ -72,13 +75,15 @@ public class InicioSesion extends HttpServlet{
     {
       boolean admin = Boolean.parseBoolean((String) session.getAttribute("admin"));
       
-      if(admin)
-      {
-        resp.sendRedirect(req.getContextPath() + "/panelControl?pag=home");
-      }else
-      {
-        pintarPaginaAlert(out);
-      }
+      // if(admin)
+      // {
+      //   resp.sendRedirect(req.getContextPath() + "/panelControl?pag=home");
+      // }else
+      // {
+      //   pintarPaginaAlert(out);
+      // }
+
+      resp.sendRedirect(req.getContextPath() + "/panelControl?pag=home");
 
 
 

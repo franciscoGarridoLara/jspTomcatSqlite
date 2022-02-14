@@ -34,7 +34,8 @@ public class PanelControl extends HttpServlet{
                       pintarPanel(out);
                     }else
                     {
-                      pintarPaginaSinAutorizacion(out);
+                      resp.sendRedirect(req.getContextPath() + "/inicioSesion");
+                      //pintarPaginaSinAutorizacion(out);
                     }
 
     }
@@ -180,6 +181,7 @@ public class PanelControl extends HttpServlet{
       for (Usuario usuario : users) {
         st = new ST(PlantillasHTML.TR_USUARIO, '$','$');
         st.add("nombre_usuario", usuario.getUsername());
+        st.add("username", usuario.getUsername());
         htmlUsuarios+= st.render();
       }
 
@@ -202,7 +204,7 @@ public class PanelControl extends HttpServlet{
                         if(session.getAttribute("admin").equals("true"))
                         {
                           admin = true;
-                          System.err.println("ADMIN COMPROBADO");
+                          //System.err.println("ADMIN COMPROBADO");
                         }
                       }
                     }

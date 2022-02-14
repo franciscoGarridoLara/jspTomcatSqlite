@@ -23,6 +23,8 @@ public class Editar extends HttpServlet{
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
                   throws ServletException, IOException {
                     resp.setCharacterEncoding("UTF-8");
+                    resp.setHeader("Cache-Control", "private, no-store, no-cache, must-revalidate");
+                    resp.setHeader("Pragma", "no-cache");
 
                     String idEntrada = req.getParameter("idEntrada");
                     String borrar = (String) req.getParameter("borrar");
@@ -142,11 +144,11 @@ public class Editar extends HttpServlet{
         LocalDate fecha;
 
         id = Integer.parseInt(req.getParameter("id"));
-        titulo = req.getParameter("titulo");
-        texto = req.getParameter("contenido");
+        titulo = formatearContenido((String) req.getParameter("titulo"));
+        texto = formatearContenido((String) req.getParameter("contenido"));
         fecha = LocalDate.parse(req.getParameter("fecha"));
 
-
+        
 
         Entrada entrada = new Entrada(id,titulo,texto,fecha);
 
@@ -221,8 +223,8 @@ public class Editar extends HttpServlet{
         LocalDate fecha;
 
         
-        titulo = req.getParameter("titulo");
-        texto = req.getParameter("contenido");
+        titulo = formatearContenido((String) req.getParameter("titulo"));
+        texto = formatearContenido((String) req.getParameter("contenido"));
         try {
             fecha = LocalDate.parse(req.getParameter("fecha"));
         } catch (DateTimeParseException e) {
@@ -231,6 +233,7 @@ public class Editar extends HttpServlet{
             fecha = LocalDate.now();
         }
 
+        
         Entrada entrada = new Entrada(titulo,texto,fecha);
 
         
@@ -252,5 +255,10 @@ public class Editar extends HttpServlet{
         
 
 
-    }    
+    }
+
+    private String formatearContenido(String contenido)
+    {
+        return contenido.replaceAll("\\<.*?\\>", "");
+    }
 }

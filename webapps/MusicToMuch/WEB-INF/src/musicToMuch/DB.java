@@ -95,6 +95,19 @@ public class DB {
                
                stmt = conn.createStatement();
                stmt.execute(sql);
+
+
+                sql = "CREATE TABLE IF NOT EXISTS Contador (id INTEGER PRIMARY KEY AUTOINCREMENT, access_page VARCHAR NOT NULL UNIQUE, access_counter INTEGER)";
+                stmt = conn.createStatement();
+                stmt.execute(sql);
+
+                sql = "INSERT INTO Contador(access_page,access_counter) VALUES(?,?)";
+                pstmt = conn.prepareStatement(sql);
+                pstmt.setString(1, "index");
+                pstmt.setInt(2, 0);
+
+                pstmt.executeUpdate();
+                
             } catch (Exception e) {
                 System.err.println(e.getMessage());
             }
@@ -560,6 +573,73 @@ public class DB {
 
 
         return usuario;
+    }
+
+
+    public boolean borrarUsuario(String username)
+    {
+        boolean exito = false;
+        
+        String sql = "DELETE FROM Usuarios WHERE usuario = ?";
+        
+        conectar();
+
+        try {
+            PreparedStatement pstm = conn.prepareStatement(sql);
+            pstm.setString(1, username);
+
+            if(pstm.executeUpdate() > 0)
+                exito = true;
+
+        } catch (SQLException e) {
+            System.err.println(e);
+            e.printStackTrace();
+        }
+        desconectar();
+        return exito;
+    }
+
+    public synchronized void incrementarContador()
+    {
+
+        String sql = "UPDATE Contador SET access_counter = access_counter + 1 WHERE id = 1";
+
+        conectar();
+
+        try {
+            Statement st = conn.createStatement();
+            st.executeQuery(sql);
+        
+        } catch (SQLException e) {
+            System.err.println(e);
+            e.printStackTrace();
+        }
+        desconectar();
+
+    }
+
+    public int getContador()
+    {
+        int visitas = 0;
+        String sql = "SELECT access_counter FROM Contador WHERE id = 1";
+
+        conectar();
+
+        try {
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+
+            if(rs.next())
+            {
+                visitas = rs.getInt("access_counter");
+            }
+        } catch (SQLException e) {
+            System.err.println(e);
+            e.printStackTrace();    
+        }
+
+        desconectar();
+        return visitas;
     }
 
 

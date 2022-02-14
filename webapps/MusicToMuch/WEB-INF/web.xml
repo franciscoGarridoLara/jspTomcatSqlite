@@ -9,6 +9,15 @@
     </servlet-mapping>
 
     <servlet>
+      <servlet-name>Inicio</servlet-name>
+      <servlet-class>musicToMuch.Inicio</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>Inicio</servlet-name>
+      <url-pattern>/inicio</url-pattern>
+   </servlet-mapping>
+
+    <servlet>
       <servlet-name>InicioSesion</servlet-name>
       <servlet-class>musicToMuch.InicioSesion</servlet-class>
    </servlet>
@@ -70,6 +79,17 @@
       <servlet-name>InsertarUsuario</servlet-name>
       <url-pattern>/insertarUsuario</url-pattern>
    </servlet-mapping>
+
+   <servlet>
+      <servlet-name>BorrarUsuario</servlet-name>
+      <servlet-class>musicToMuch.BorrarUsuario</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>BorrarUsuario</servlet-name>
+      <url-pattern>/borrarUsuario</url-pattern>
+   </servlet-mapping>
+
+   
 
 
  

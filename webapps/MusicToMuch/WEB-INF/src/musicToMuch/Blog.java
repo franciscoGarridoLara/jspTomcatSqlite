@@ -25,18 +25,9 @@ public class Blog extends HttpServlet{
 
                     if(session != null)
                     {
-                      if(session.getAttribute("admin") != null)
+                      if(PanelControl.esAdministrador(session))
                       {
-                        if(session.getAttribute("admin").equals("true"))
-                        {
-                          System.err.println("FELICIDADES ES ADMIN");
-                          pintarBlogAdmin(out);
-                        }else
-                        {
-                            System.err.print("NO ES ADMIN");
-                            pintarBlogUsuario(out);
-
-                        }
+                        pintarBlogAdmin(out);
                       }else
                       {
                         pintarBlogUsuario(out);

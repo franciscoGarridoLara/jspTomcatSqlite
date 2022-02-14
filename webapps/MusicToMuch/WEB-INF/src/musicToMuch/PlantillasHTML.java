@@ -11,6 +11,7 @@ public class PlantillasHTML {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href="./recursos/css/installer.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./recursos/imagenes/icon.png">
         <title>Installer</title>
     </head>
     """;
@@ -21,6 +22,7 @@ public class PlantillasHTML {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href="./recursos/css/login.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./recursos/imagenes/icon.png">
         <title>Login</title>
     </head>
     """;
@@ -31,6 +33,7 @@ public class PlantillasHTML {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href="./recursos/css/panel.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./recursos/imagenes/icon.png">
         <title>Panel de Control</title>
     </head>
     """;
@@ -41,6 +44,7 @@ public class PlantillasHTML {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href="./recursos/css/blog.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./recursos/imagenes/icon.png">
         <title>Blog</title>
     </head>
     """;
@@ -69,12 +73,26 @@ public class PlantillasHTML {
 
     """;
 
-    public static final String SCRIPT_CARGA = "<script src='./recursos/js/carga.js' text='javascript'>";
+    public static final String SCRIPT_CARGA = """
+    <script>
+    function cargar()
+    {
+        window.location.replace("http://localhost:8080/MusicToMuch/inicioSesion");
+
+    }
+
+
+    document.addEventListener('DOMContentLoaded', function(event){
+        console.log('Documento cargado, redireccionando...');
+        setTimeout(cargar,4000);
+    });
+    </script>
+    """;
 
     public static final String NAVBAR_TEMPLATE = """
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-    <a class="navbar-brand" href="./index.html">MusicToMuch</a>
+    <a class="navbar-brand" href="./inicio">MusicToMuch</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -170,7 +188,7 @@ public class PlantillasHTML {
               <thead>
                 <tr>
                   <th scope="col">User</th>
-                  <th scope="col">Password</th>
+                  <th scope="col">Borrar</th>
                 </tr>
               </thead>
               <tbody>
@@ -324,9 +342,9 @@ public class PlantillasHTML {
     public static final String TR_USUARIO = """
     <tr>
     <td>$nombre_usuario$</td>
-    <td><form action="./" method="post">
-          <input type="hidden" name="username" value="$username$">
-          <input type="submit" value="Editar" class="btn btn-primary">
+    <td><form action="./borrarUsuario" method="POST">
+          <input type="hidden" name="username" id="username" value="$username$">
+          <input type="submit" value="Borrar" class="btn btn-danger">
         </form>
     </td>
     </tr>
@@ -382,7 +400,7 @@ public class PlantillasHTML {
       <div class="text-center">
         <div class="spinner-border" role="status">
         </div>
-        <p>Creando base de datos...</p>
+        <p>Configurando...</p>
       </div>
     </div>
     
@@ -408,7 +426,69 @@ public class PlantillasHTML {
 
     """;
 
+    public static final String INDEX_PAGE = """
 
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./recursos/css/index.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="./recursos/imagenes/icon.png">
+  <title>MusicToMuch</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./inicio">MusicToMuch</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./inicioSesion">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blog">Entradas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./panelControl">Panel de control</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div style="text-align:center; position: fixed; top: 10vh; right: 1vh; background-color: white; border-radius: 1em; width: 20vh; height: 5vh; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
+    <h2>$visitas$ visitas</h2>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <p class="text-center">Creado por Francisco Garrido Lara &#169</p>
+      <hr>
+      <p class="text-center">Programación de servicios y procesos</p>
+    </div>
+  </div>
+</footer>
+
+</html>
+
+
+
+    """;
     public static final String OPEN_CONTAINER = "<div class='container'>";
     public static final String CLOSE_DIV = "</div>";
     public static final String OPEN_BODY = "<body>";

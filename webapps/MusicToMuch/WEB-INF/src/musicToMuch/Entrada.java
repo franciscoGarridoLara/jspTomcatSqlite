@@ -79,7 +79,7 @@ public class Entrada {
 
     public String getHTMLUser()
     {
-        String html = "<div class='card' style='width: 18rem;''>";
+        String html = "<div class='card'>";
         html += "<div class='card-body'>";
         html += "<h5 class='card-title'>"+ this.titulo + "</h5>";
         html += "<h6 class='card-subtitle mb-2 text-muted'>"+ this.fecha + "</h6>";
@@ -92,7 +92,7 @@ public class Entrada {
 
     public String getHTMLAdmin()
     {
-        String html = "<div class='card' style='width: 18rem;''>";
+        String html = "<div class='card'>";
         html += "<div class='card-body'>";
         html += "<h5 class='card-title'>"+ this.titulo + "</h5>";
         html += "<h6 class='card-subtitle mb-2 text-muted'>"+ this.fecha + "</h6>";

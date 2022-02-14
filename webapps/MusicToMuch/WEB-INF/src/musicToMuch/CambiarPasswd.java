@@ -23,13 +23,10 @@ public class CambiarPasswd extends HttpServlet{
 
                     PrintWriter out = resp.getWriter();
 
-                    if(session != null)
+
+                    if(PanelControl.esAdministrador(session))
                     {
-                      if(session.getAttribute("admin") != null)
-                      {
-                        if(session.getAttribute("admin").equals("true"))
-                        {
-                         if(cambiarPasswd(req,resp,session))
+                      if(cambiarPasswd(req,resp,session))
                          {
                              System.err.println("contraseña cambiada");
                              resp.sendRedirect(req.getContextPath() + "/panelControl?pag=chgPasswd&success=true");
@@ -38,8 +35,6 @@ public class CambiarPasswd extends HttpServlet{
                             System.err.println("contraseña NO cambiada");
                             resp.sendRedirect(req.getContextPath() + "/panelControl?pag=chgPasswd&success=false");
                          }
-                        }
-                      }
                     }
                     
                   
@@ -64,7 +59,7 @@ public class CambiarPasswd extends HttpServlet{
             
             usuario = (String) session.getAttribute("user");
 
-            original = DB.getInstanceDb().getHashTextPassword("admin");
+            original = DB.getInstanceDb().getUsuario(usuario).getPassword();
             
             pass1 = DB.getHashTextPasswordFromText(pass1);
 
